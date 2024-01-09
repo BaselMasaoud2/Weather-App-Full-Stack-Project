@@ -1,0 +1,114 @@
+body {
+  background-color: #3498db;
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+#search-input {
+  padding: 10px;
+  margin: 20px;
+  border: none;
+  border-radius: 5px;
+  width: 200px;
+  font-size: 16px;
+}
+
+#search-btn {
+  background-color: #2ecc71;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#weather-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.weather-card {
+  background-color: #2980b9;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative; /* Added for positioning the icons and buttons */
+}
+
+.weather-icon {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 30px;
+}
+
+.temperature {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.city-name {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.condition-icon {
+  max-width: 200px; /* Adjust the size as needed */
+  max-height: 50px; /* Adjust the size as needed */
+  margin-left: 20px;
+}
+
+.add-temperature-btn,
+.remove-temperature-btn {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.btn {
+  background-color: #e74c3c;
+  color: #fff;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.weather-condition {
+  text-transform: capitalize;
+  margin-top: 10px;
+}
+
+.result-buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.temperature-change {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* New styles for the search results */
+.search-results {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
