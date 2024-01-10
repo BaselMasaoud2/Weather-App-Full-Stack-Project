@@ -16,7 +16,7 @@ export default class Model {
     try {
       const response = await fetch(`/api/cities/${cityName}`);
       const cityData = await response.json();
-      console.log('City data from server:', cityData); // Add this line
+      console.log('City data from server:', cityData); 
       return cityData;
     } catch (error) {
       console.error('Error fetching city data from server:', error.message);
