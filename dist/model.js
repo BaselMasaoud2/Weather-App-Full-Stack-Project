@@ -3,7 +3,6 @@ export default class Model {
   constructor() {
     this.cities = [];
   }
-
   async getCitiesFromServer() {
     try {
         const response = await fetch('/api/cities');
@@ -13,8 +12,6 @@ export default class Model {
         console.error('Error fetching cities from server:', error.message);
     }
 }
-
-
   async getCityData(cityName) {
     try {
       const response = await fetch(`/api/cities/${cityName}`);
@@ -26,9 +23,6 @@ export default class Model {
       return { name: cityName, temperature: 'N/A', condition: 'N/A' };
     }
   }
-  
-  
-
   async saveCityToDB(cityData) {
     try {
       await fetch('/api/cities', {
@@ -50,8 +44,4 @@ export default class Model {
       console.error('Error deleting city from DB:', error.message);
     }
   }
-
-  
 }
-
-
