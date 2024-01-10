@@ -21,7 +21,6 @@ export default class Renderer {
         'Clear': 'https://cdn-icons-png.flaticon.com/512/6122/6122561.png',
         'Clouds': 'https://cdn-icons-png.flaticon.com/512/6122/6122714.png',
         'Partly Cloudy': 'https://www.clipartmax.com/png/middle/129-1293850_download-icon-mostly-cloudy-weather-icon.png',
-        // Add more conditions as needed
     };
     const iconURL = conditionIcons[cityData.condition] || 'https://example.com/default.png';
     container.innerHTML = `
@@ -34,11 +33,9 @@ export default class Renderer {
             <button class="add-temperature-btn" onclick="addTemperature('${cityData.name}')">+</button>
             <button class="remove-temperature-btn" onclick="removeTemperature('${cityData.name}')">-</button>
             </div>
-          
         </div>
     `;
 }
-
   renderSearchResults(searchResults) {
     const resultsHTML = searchResults.map(result => `
       <div class="weather-card">
