@@ -6,14 +6,13 @@ body {
   margin: 0;
   padding: 0;
 }
-
 #search-input {
   padding: 10px;
   margin: 20px;
   border: none;
   border-radius: 5px;
   width: 200px;
-  font-size: 16px;
+  font-size: 15px;
 }
 
 #search-btn {
@@ -22,10 +21,9 @@ body {
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
-  font-size: 16px;
+  font-size: 15px;
   cursor: pointer;
 }
-
 #weather-container {
   display: flex;
   flex-direction: column;
@@ -42,43 +40,36 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: relative; /* Added for positioning the icons and buttons */
+  position: relative; 
 }
-
 .weather-icon {
   width: 100px;
   height: 100px;
   margin-bottom: 30px;
 }
-
 .temperature {
   font-size: 24px;
   font-weight: bold;
 }
-
 .city-name {
   margin-top: 10px;
   font-size: 20px;
 }
-
 .condition-icon {
-  max-width: 200px; /* Adjust the size as needed */
-  max-height: 50px; /* Adjust the size as needed */
+  max-width: 200px; 
+  max-height: 50px; 
   margin-left: 20px;
 }
-
 .add-temperature-btn,
 .remove-temperature-btn {
   margin-left: 10px;
   cursor: pointer;
 }
-
 .btn-container {
   display: flex;
   justify-content: space-around;
   margin-top: 10px;
 }
-
 .btn {
   background-color: #e74c3c;
   color: #fff;
@@ -88,24 +79,19 @@ body {
   font-size: 16px;
   cursor: pointer;
 }
-
 .weather-condition {
   text-transform: capitalize;
   margin-top: 10px;
 }
-
 .result-buttons {
   display: flex;
   justify-content: space-around;
   margin-top: 20px;
 }
-
 .temperature-change {
   font-size: 18px;
   font-weight: bold;
 }
-
-/* New styles for the search results */
 .search-results {
   display: flex;
   flex-direction: column;
