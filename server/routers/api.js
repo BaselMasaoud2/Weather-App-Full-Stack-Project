@@ -18,15 +18,15 @@ router.get('/cities/:cityName', async (req, res) => {
       const apiKey = '88951202b5fd20254aedd3548ecaf7dc';
       const response = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apiKey}`);
   
-      console.log('API response:', response.data); // Add this line
+      console.log('API response:', response.data); 
   
       const cityData = response.data;
   
       // Additional code...
       const formattedCityData = {
         name: cityData.name,
-        temperature: cityData.main.temp, // Update to the correct property
-        condition: cityData.weather[0].main, // Update to the correct property
+        temperature: cityData.main.temp, 
+        condition: cityData.weather[0].main, 
       };
   
       res.json(formattedCityData);
