@@ -4,7 +4,6 @@ export default class Renderer {
     this.weatherContainer = document.getElementById('weather-container');
     this.searchResults = document.getElementById('search-results');
   }
-
   renderSavedCities() {
     const citiesHTML = this.model.cities.map(city => `<li>${city.name}</li>`).join('');
     this.weatherContainer.innerHTML = `
@@ -14,7 +13,6 @@ export default class Renderer {
       </div>
     `;
   }
-
   renderCityData(cityData) {
     console.log(cityData);
     const container = document.getElementById('weather-container');
@@ -25,9 +23,7 @@ export default class Renderer {
         'Partly Cloudy': 'https://www.clipartmax.com/png/middle/129-1293850_download-icon-mostly-cloudy-weather-icon.png',
         // Add more conditions as needed
     };
-
     const iconURL = conditionIcons[cityData.condition] || 'https://example.com/default.png';
-
     container.innerHTML = `
         <div class="weather-card">
             <span class="city-name">${cityData.name}</span><br>
@@ -41,8 +37,6 @@ export default class Renderer {
           
         </div>
     `;
-
-    
 }
 
   renderSearchResults(searchResults) {
@@ -65,9 +59,4 @@ export default class Renderer {
   logCityData(cityData) {
     console.log(cityData);
   }
-
-
-
-  
-
 }
