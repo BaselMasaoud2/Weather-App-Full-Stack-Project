@@ -1,13 +1,7 @@
-// 88951202b5fd20254aedd3548ecaf7dc /// 
 const express = require('express');
 const router = express.Router();
-const axios = require('axios'); // Add this line to import axios
-
+const axios = require('axios');
 const City = require('../model/City');
-
-// ... Rest of the code ...
-
-// GET /api/cities
 router.get('/cities', async (req, res) => {
   try {
     const cities = await City.find();
@@ -17,11 +11,6 @@ router.get('/cities', async (req, res) => {
     res.status(500).json({ error: 'Failed to fetch cities from DB' });
   }
 });
-
-// GET /api/cities/:cityName
-// GET /api/cities/:cityName
-// GET /api/cities/:cityName
-// GET /api/cities/:cityName
 router.get('/cities/:cityName', async (req, res) => {
     const cityName = req.params.cityName;
   
@@ -46,14 +35,6 @@ router.get('/cities/:cityName', async (req, res) => {
       res.status(500).json({ error: 'Failed to fetch data from API' });
     }
   });
-  
-
-
-
-
-  
-
-// POST /api/cities
 router.post('/cities', async (req, res) => {
   const newCityData = req.body;
 
@@ -65,8 +46,6 @@ router.post('/cities', async (req, res) => {
     res.status(500).json({ error: 'Failed to save city to DB' });
   }
 });
-
-// DELETE /api/cities/:cityName
 router.delete('/cities/:cityName', async (req, res) => {
   const cityName = req.params.cityName;
 
