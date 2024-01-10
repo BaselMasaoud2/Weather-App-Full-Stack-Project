@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const express = require('express');
 const router = express.Router();
-const axios = require('axios'); // הוספת ה-import של axios
+const axios = require('axios'); 
 const citySchema = new mongoose.Schema({
   name: String,
   temperature: Number,
